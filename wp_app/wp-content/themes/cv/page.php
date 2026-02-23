@@ -135,56 +135,10 @@
     <div class="googlemap">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5367.046994746155!2d7.29973847679788!3d47.73249667927476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47919b263a4d2509%3A0x7ce819ef2399f13c!2s7%20Bd%20des%20Nations%2C%2068200%20Mulhouse!5e0!3m2!1sfr!2sfr!4v1771843092577!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div>
-        <form class="formulaire">
-            <h2>Formulaire :</h2>
-            <div class="form">
-                <div class="label"><label for="nom">Nom:</label></div>
-                <div class="nom"><input type="text" name="nom" id="nom"></div>
-            </div>
-            <div class="form">
-                <div class="label"><label for="email">E-mail:</label></div>
-                <div class="email"><input type="email" name="email" id="email"></div>
-            </div>
-            <div class="form">
-                <div class="label"><label for="telephone">Téléphone:</label></div>
-                <div class="telephone"><input type="tel" name="telephone" id="tel"></div>
-            </div>
-            <div class="form">
-                <div class="label"><label for="commentaire">Commentaire:</label></div>
-                <div class="textarea"><textarea name="commentaire" id="commentaire"></textarea></div>
-            </div>
-            <input type="button" value="Envoyer" id="button">
-            <!--<button type="submit" id="button">Envoyer</button>-->
-        </form>
-    </div>
-    <div class="commentaries">
-        <p><span id="span_nom"></span></p>
-        <p><span id="coms"></span></p>
-    </div>
-    
-    <script>
-        const nom = document.getElementById('nom');
-        const commentaire = document.getElementById('commentaire');
-        const button = document.getElementById('button');
-        const tel = document.getElementById('email');
-        const email = document.getElementById('tel');
-        const coms = document.getElementById('coms');
-        const span_nom = document.getElementById('span_nom');
 
-        nomValue = nom.value;
-        comsValue = commentaire.value;
-
-        function sendComs() {
-            span_nom.textContent = nomvalue;
-            coms.textContent = comsValue;
-        }
-        button.addEventListener('click', sendComs);
-    </script>
-    
-    
-</body>
-<?php
+    <?php
     get_footer();
     ?>
+</body>
+
 </html>

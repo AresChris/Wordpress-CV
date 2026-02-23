@@ -11,7 +11,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <div class="div-header-name">
-        <h1><?php bloginfo('name'); ?></h1>
+       <h1>Mon Super CV</h1>
     </div>
     
     <h2><?php bloginfo('description'); ?></h2>
