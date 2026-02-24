@@ -10,181 +10,19 @@
 <body>
     <?php
     get_header();
+    if(have_posts()): // si l'url appelé correspond à du contenu (article, page, auteur, catégorie...)
+            while(have_posts()): // pour chaque élément trouvé...
+                the_post(); // On charge les données du contenu
     ?>
-
-    <div class="square">
-        <div class="name">
-            Christopher ARES
-        </div>
-        <div class="bandeau">
-            35 ans | Permis B | christopher.ares@icloud.com | 06.41.71.80.63
-        </div>
-        <div class="classe">
-            Ouvrier polyvalent
-        </div>
-        <div class="project">
-            Projet: développeur web et web mobile
-        </div>
-        <div class="bloc">
-            <div class="title">
-                Compétences liées à l'informatique
-            </div>
-
-
-            <div>
-                <ul>
-                    <li>Utilisation naturelle de l'outil informatique</li>
-                    <li>Connaissances et compréhension approfondies d'Excel</li>
-                    <li>Bases solides en Java, HTML/CSS</li>
-                </ul>
-            </div>
-            <div class="title">
-                Etudes / Formations
-            </div>
-            <div class="qualif">
-                <div class="date">2025</div>
-                <div class="qualif_1">Formation qualifiante développeur web</div>
-            </div>
-            <div class="prepa">
-                <div class="date">2023</div>
-                <div class="prepa_1">Formation préparatoire développeur web et web mobile</div>
-            </div>
-            <div class="bep">
-                <div class="date">2006/2008</div>
-                <div class="bep_1">BEP géomètre topographe en alternance</div>
-            </div>
-            <div class="bafa">
-                <div class="date">2009</div>
-                <div class="bafa_1">BAFA + AFPS</div>
-            </div>
-
-            <div class="title">
-                Experiences professionnelles
-            </div>
-            <div class="list">-Hotellerie/restauration | 2009/2010</div>
-            <div class="list">
-                <ul>
-                    <li>Plongeur</li>
-                    <li>Serveur/limonadier</li>
-                    <li>Crêpier et aide boulanger</li>
-                </ul>
-            </div>
-            <div class="list">-Bâtiment / travaux publics | 2010/2021</div>
-            <div class="list">
-                <ul>
-                    <li>Aide-maçon</li>
-                    <li>Scieur de béton</li>
-                    <li>Pose de resaux souterrains (fluvial, éléctrique...)</li>
-                    <li>Démolition</li>
-                    <li>Sollier moquettiste (pose de moquette et sols plastiques)</li>
-                </ul>
-            </div>
-            <div class="title">Employeurs</div>
-            <div class="readapt">
-                <div class="date">2025 | 2026</div>
-                <div class="readapt_1">Centre de réadaptation de Mulhouse</div>
-            </div>
-
-            <div>
-                <ul>
-                    <li>Développeur web et web mobile</li>
-                </ul>
-            </div>
-            <div class="agent_courrier">
-                <div class="date">2022 | 2023</div>
-                <div class="agent_courrier_1">La poste | Agent courrier</div>
-            </div>
-            <div>
-                <ul>
-                    <li>Tri et distribution de courrier aux entreprises</li>
-                </ul>
-            </div>
-            <div class="interim">
-                <div class="date">2019 | 2021</div>
-                <div class="interim_1">Adéquat 73 et Tremplin 73</div>
-            </div>
-            <div>
-                <ul>
-                    <li>Aide-maçon et scieur de béton</li>
-                </ul>
-            </div>
-            <div class="vinci">
-                <div class="date">2013 | 2016</div>
-                <div class="vinci_1">Vinci-Eurovia béton | Ouvrier polyvalent en rénovation d'ouvrages d'art</div>
-            </div>
-            <div>
-                <ul>
-                    <li>Réparation ponts et murs de soutènement (béton projeté)</li>
-                </ul>
-            </div>
-            <div class="nantet">
-                <div class="date">2010 | 2013</div>
-                <div class="nantet_1">Nantet | Démolition - déconstruction</div>
-            </div>
-
-            <div>
-                <ul>
-                    <li>Démolition/déconstruction manuelle</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="ma-loc">
-        <h1>Ma localisation :</h1>
-    </div>
-    <div class="googlemap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5367.046994746155!2d7.29973847679788!3d47.73249667927476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47919b263a4d2509%3A0x7ce819ef2399f13c!2s7%20Bd%20des%20Nations%2C%2068200%20Mulhouse!5e0!3m2!1sfr!2sfr!4v1771843092577!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div>
-        <form class="formulaire">
-            <h2>Formulaire :</h2>
-            <div class="form">
-                <div class="label"><label for="nom">Nom:</label></div>
-                <div class="nom"><input type="text" name="nom" id="nom"></div>
-            </div>
-            <div class="form">
-                <div class="label"><label for="email">E-mail:</label></div>
-                <div class="email"><input type="email" name="email" id="email"></div>
-            </div>
-            <div class="form">
-                <div class="label"><label for="telephone">Téléphone:</label></div>
-                <div class="telephone"><input type="tel" name="telephone" id="tel"></div>
-            </div>
-            <div class="form">
-                <div class="label"><label for="commentaire">Commentaire:</label></div>
-                <div class="textarea"><textarea name="commentaire" id="commentaire"></textarea></div>
-            </div>
-            <input type="button" value="Envoyer" id="button">
-            <!--<button type="submit" id="button">Envoyer</button>-->
-        </form>
-    </div>
-    <div class="commentaries">
-        <p><span id="span_nom"></span></p>
-        <p><span id="coms"></span></p>
-    </div>
-    
-    <script>
-        const nom = document.getElementById('nom');
-        const commentaire = document.getElementById('commentaire');
-        const button = document.getElementById('button');
-        const tel = document.getElementById('email');
-        const email = document.getElementById('tel');
-        const coms = document.getElementById('coms');
-        const span_nom = document.getElementById('span_nom');
-
-        nomValue = nom.value;
-        comsValue = commentaire.value;
-
-        function sendComs() {
-            span_nom.textContent = nomvalue;
-            coms.textContent = comsValue;
-        }
-        button.addEventListener('click', sendComs);
-    </script>
-    
-    
-</body>
-<?php
+    <h1><?php the_title();  // affichage du titre ?></h1>
+    <article class="montheme_article">
+        <article>
+            <?php the_content(); //contenu du post ?>
+        </article>
+    <?php
+            endwhile;
+    endif;
     get_footer();
     ?>
+</body>
 </html>

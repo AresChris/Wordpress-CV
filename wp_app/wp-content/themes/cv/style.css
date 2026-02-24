@@ -1,6 +1,28 @@
 body{
     background-color: bisque;
 }
+.menu ul{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 250px;
+}
+.page_item{
+    list-style: none;
+    background-color: antiquewhite;
+    padding: 2rem;
+    margin-right: 0;
+    width: 200px;
+ 
+}
+.page_item a{
+    text-decoration: none;
+    font-size: larger;
+    padding: 1.5rem;
+}
+.page_item:hover{
+    background-color: rgba(68, 67, 65, 0.377);
+}
 .div-header-name{
     text-align: center;
     align-content: center;
@@ -72,26 +94,31 @@ ul, li{
 .list{
     margin-left: 20px;
 }
-.googlemap{
-    width: 650px;
-    margin: auto;
-}
-.ma-loc{
-    width: 250px;
-    margin: auto;
-}
-.formulaire{
-    width: 250px;
-    margin: auto;
-}
-.form{
-    margin-bottom: 10px;
-}
-/*.commentaries{
-    width: 150px;
-    margin: auto;
-}*/
 .footer{
     width: 200px;
     margin: auto;
+}
+.texte_presentation{
+    width: 450px;
+    margin: auto;
+    font-size: larger;
+}
+h1{
+    margin-left: 50px;
+}
+.passions{
+    width: 650px;
+    margin: auto;
+    font-size: xx-large;
+}
+.contacts{
+    width: 500px;
+    margin: auto;
+}
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+.loc{
+    font-size: 25px;
 }

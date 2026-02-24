@@ -13,7 +13,9 @@
     <div class="div-header-name">
        <h1>Mon Super CV</h1>
     </div>
-    
+    <?php wp_nav_menu([
+        'theme_location' => 'main'
+    ]) ?>
     <h2><?php bloginfo('description'); ?></h2>
     
 <main>
