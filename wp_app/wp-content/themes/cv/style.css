@@ -1,11 +1,20 @@
 body{
     background-color: bisque;
 }
+.menu_hamburger{
+    display: none;
+}
 .menu ul{
     display: flex;
+    max-width: 100%;
     margin: auto;
     margin-top: 20px;
-    margin-left: 250px;
+}
+div.main_pages{
+    display: none;
+}
+#toggle{
+    display: none;
 }
 .page_item{
     list-style: none;
@@ -13,17 +22,48 @@ body{
     padding: 2rem;
     margin-right: 0;
     width: 200px;
- 
 }
 .page_item a{
     text-decoration: none;
     font-size: larger;
     padding: 1.5rem;
 }
+@media screen and (max-width: 850px) {
+    div.menu{
+        display: none;
+    }
+    label.menu_hamburger{
+        font-size: 100px;
+        display: flex;
+        margin-top: 0.5rem;
+        display: flex;
+        margin: 0 auto;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    #toggle:checked + div.main_pages{
+        display: block;
+        width: 20%;
+        background-color: antiquewhite;
+    }
+    div.main_pages a{
+        display: block;
+        text-decoration: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    div.main_pages a:hover{
+        background-color: rgba(68, 67, 65, 0.377);
+    }
+    div.main_pages{
+        position: absolute;
+    }
+}
 .page_item:hover{
     background-color: rgba(68, 67, 65, 0.377);
 }
-.div-header-name{
+div.div-header-name{
     text-align: center;
     align-content: center;
     border-style: solid;
@@ -103,6 +143,9 @@ ul, li{
     margin: auto;
     font-size: larger;
 }
+div.texte_presentation{
+    text-align: justify;
+}
 h1{
     margin-left: 50px;
 }
@@ -121,4 +164,20 @@ h1{
 }
 .loc{
     font-size: 25px;
+}
+.wp-block-file__embed{
+    display: none;
+}
+.wp-block-file{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+div.wpforms-field-container, div.wpforms-submit-container{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+}
+div.div_header_name{
+    width: 100%;
 }
