@@ -17,13 +17,13 @@
     </div>
     <label class="menu_hamburger" for="toggle">☰</label>
     <input type="checkbox" name="toggle" id="toggle">
-        <div class="main_pages">
-            <a href="http://localhost:8090/">Accueil</a>
-            <a href="http://localhost:8090/?page_id=28">A propos</a>
-            <a href="http://localhost:8090/?page_id=26">Blog</a>
-            <a href="http://localhost:8090/?page_id=18">Me contacter</a>
-            <a href="http://localhost:8090/?page_id=14">Réalisations</a>
-        </div>
+    <div class="main_pages">
+        <a href="http://localhost:8090/">Accueil</a>
+        <a href="http://localhost:8090/?page_id=28">A propos</a>
+        <a href="http://localhost:8090/?page_id=26">Blog</a>
+        <a href="http://localhost:8090/?page_id=18">Me contacter</a>
+        <a href="http://localhost:8090/?page_id=14">Réalisations</a>
+    </div>
 
     <?php wp_nav_menu([
         'theme_location' => 'main'
