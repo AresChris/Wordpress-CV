@@ -9,7 +9,7 @@
 </head>
 <body class="body_404">
     <div class="img_404">
-        <img src="https://media.istockphoto.com/id/1404059706/fr/vectoriel/page-du-site-web-introuvable-erreur-404-oups-un-personnage-de-robot-inquiet-qui-sort-de.jpg?s=612x612&w=0&k=20&c=_xPpHWjzrN1x9JH6Vn9dtPmfKE_HmuIbWf5d4nftUR8=" alt="error404">
+        <img src="http://localhost:8090/wp-content/uploads/2026/02/404.png" width="1000px" height="auto" alt="error404">
     </div>
 </body>
 </html>
