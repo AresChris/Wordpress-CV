@@ -1,0 +1,365 @@
+/*
+Theme Name: cv
+*/
+body{
+    background-color: black;
+    color: white;
+}
+.menu_hamburger{
+    display: none;
+}
+
+figure img{
+    width: 150px;
+    margin: auto;
+}
+.menu ul{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+}
+.menu li{
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+}
+div.main_pages{
+    display: none;
+}
+.title{
+    width: 350px;
+    margin: auto;
+}
+#toggle{
+    display: none;
+}
+.page_item{
+    list-style: none;
+    background-color: rgb(48, 47, 47);
+    padding: 2rem;
+    width: 250px;
+    border-style: solid;
+    border-color: transparent;
+}
+.page_item a{
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+    color: white;
+}
+li.page_item a{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+@media screen and (max-width: 1130px) {
+    div.menu{
+        display: none;
+    }
+    label.menu_hamburger{
+        font-size: 100px;
+        display: flex;
+        margin-top: 0.5rem;
+        display: flex;
+        margin: 0 auto;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    #toggle:checked + div.main_pages{
+        display: block;
+        width: 30%;
+        background-color: black;
+        
+    }
+    div.main_pages a{
+        display: block;
+        text-decoration: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        color: white;
+    }
+    div.main_pages a:hover{
+        background-color: rgba(68, 67, 65, 0.377);
+        border-style: solid;
+        border-color: white;
+    }
+    div.main_pages{
+        position: absolute;
+    }
+    img.image{
+        display: none;
+    }
+    div.textwidget{
+        display: none;
+    }
+}
+.page_item:hover{
+    background-color: rgba(68, 67, 65, 0.377);
+    border-color: white;
+}
+div.div-header-name{
+    text-align: center;
+    align-content: center;
+    border-style: solid;
+    box-shadow: 5px 5px 5px 5px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(168, 118, 9);
+}
+.square{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.bloc{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.name{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.bandeau{
+    width: 450px;
+    margin: auto;
+}
+.classe{
+    width: 200px;
+    margin: auto;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.project{
+    width: 300px;
+    margin: auto;
+}
+.title{
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+ul, li{
+    margin: 0;
+}
+.qualif, .prepa, .bep, .bafa, .readapt, .agent_courrier,
+.interim, .vinci, .nantet{
+    display: flex;
+}
+.date{
+    width: 100px;
+}
+.qualif_1, .prepa_1, .bep_1, .bafa_1, .readapt_1, .agent_courrier_1,
+.interim_1, .vinci_1, .nantet_1{
+    width: 100%;
+}
+.list{
+    margin-left: 20px;
+}
+.footer{
+    width: 200px;
+    margin: auto;
+    bottom: 0px;
+    position: fixed;
+}
+.texte_presentation{
+    width: 450px;
+    margin: auto;
+    font-size: larger;
+    text-align: justify;
+}
+.passions{
+    width: 650px;
+    margin: auto;
+    font-size: xx-large;
+}
+.contacts{
+    width: 500px;
+    margin: auto;
+    border-style: solid;
+    border-color: white;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+label.wpforms-field-sublabel.after{
+    color: white;
+}
+div.contacts .bold, .loc {
+    margin-left: 10px;
+}
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+.loc{
+    font-size: 25px;
+}
+.wp-block-file__embed{
+    display: none;
+}
+.wp-block-file{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+div.wpforms-field-container, div.wpforms-submit-container{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+}
+div.div_header_name{
+    width: 100%;
+}
+#calendar_wrap{
+    position: sticky;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+body.body_404{
+    background-color: white;
+}
+.img_404{
+    width: 1000px;
+    margin: auto;
+}
+.photo_moi{
+    width: 220px;
+    margin: auto;
+}
+#photo_moi{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+div.site_sidebar_widget{
+    display: flex;
+    position: fixed;
+    right: 0;
+    margin-top: 60px;
+    border-radius: 50%;
+}
+div.site_sidebar_widget p{
+    margin: auto;
+}
+.widgettitle{
+    display: none;
+}
+img.image{
+    width: 150px;
+    height: auto;
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 5px 5px 5px 5px black;
+    border-radius: 5%;
+}
+.montheme_article.wp-image-115 img{
+    width: 50px;
+}
+figure.wp-block-image.size-full img{
+    width: 50px;
+    margin: auto;
+}
+div.github img{
+    vertical-align: middle;
+}
+.github-qrcode img{
+    display: flex;
+    width: 150px;
+    margin: auto;
+    align-content: center;
+    margin-bottom: 25px;
+}
+div.site_sidebar_widget p{
+    padding: 15px;
+}
+div.textwidget{
+    width: 250px;
+    background-color: black;
+    color: white;
+    margin-top: 120px;
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 5px 5px 5px 5px black;
+    border-radius: 5%;
+    text-align: justify;
+    text-decoration: none;
+}
+div.wp-block-file a{
+    color: white;
+}
+div.contacts a{
+    color: white;
+}
+div.wpforms-container .wpforms-form .wpforms-field-label{
+    color: white;
+}
+p{
+    margin-bottom: 0px;
+    padding: 0px;
+}
+div.site_sidebar2_widget{
+    display: flex;
+    position: fixed;
+    right: 0;
+    margin-top: 190px;
+    border-radius: 50%;
+    justify-content: center;
+}
+div.site_sidebar2_widget a{
+    text-decoration: none;
+    color: white;
+}
+div.site_sidebar2_widget p{
+    margin: auto;
+    padding: 15px;
+}
+article article{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    margin-bottom: 25px;
+}
+article.montheme_article{
+    width: 500px;
+    margin: auto;
+}
+p.img-qrcode{
+    width: 150px;
+    margin: auto;
+    margin-top: 25px;
+}
+div.wpd-login{
+    display: none;
+}
+#wpdcom .wpd-form-head{
+    display: none;
+}
+#comments{
+    margin-top: 0;
+}
+.wpcf7-form input{
+    width: 100%;
+    height: 25px;
+}
+.wpcf7-textarea{
+    width: 100%;
+}
+.logged-in-as{
+    display: none;
+}
